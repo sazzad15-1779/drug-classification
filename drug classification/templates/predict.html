@@ -1,0 +1,32 @@
+{%extends "base.html"%}
+{%block content%}
+<div class="container">
+<form  method="POST">
+  <div class="mb-3">
+    <label for="Age" class="form-label">Age</label>
+    <input type="number" name="nm" class="form-control" id="Age">
+  </div>
+  <div class="mb-3">
+    <label for="sex" class="form-label">sex</label>
+    <input type="number" name="sex" class="form-control" id="sex">
+  </div> 
+  <div class="mb-3">
+      <label for="BP" class="form-label">BP</label>
+      <input type="number" class="form-control" name="BP" id="BP">
+    </div>
+    <div class="mb-3">
+      <label for="Cholesterol" class="form-label">Cholesterol</label>
+      <input type="number" class="form-control" name="Cholesterol" id="Cholesterol">
+    </div>
+    <div class="mb-3">
+      <label for="Na_to_K" class="form-label">Na_to_K ratio</label>
+      <input type="text" class="form-control" name="Na_to_K" id="Na_to_K">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{%endblock%}
+{%block content1%} 
+<p> {{value}}</p>
+{%endblock%}

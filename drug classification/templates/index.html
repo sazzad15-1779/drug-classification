@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+{%block content%}
+<form  method="POST">
+    <div class="mb-3">
+      <label for="Area" class="form-label">Area</label>
+      <input type="number" class="form-control" name="em" id="Area">
+    </div>
+    <div class="mb-3">
+      <label for="Bedrooms" class="form-label">Bedrooms</label>
+      <input type="number" class="form-control" name="bd" id="Bedrooms">
+    </div>
+    <div class="mb-3">
+      <label for="Age" class="form-label">Age</label>
+      <input type="number" name="nm" class="form-control" id="Age">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{%endblock%}
+{%block content1%} 
+<p> {{value}}</p>
+{%endblock%}
